@@ -11,6 +11,16 @@
 	color: #222;
 }
 
+a, a:link, a:visited {
+	color: dodgerblue;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: blue;
+	text-decoration: underline;
+}
+
 h1, h2 {
 	font-size: 48pt;
 }
@@ -44,7 +54,11 @@ body {
 
 #publications .paper {
 	max-width: 800px;
-	margin: 1em auto;
+	margin: 1.5em auto;
+}
+
+#publications .paper ul {
+	margin-left: 2em;
 }
 
 #people {
@@ -69,12 +83,55 @@ body {
 	#manifesto {
 		background-image: url('img/seattle_small.jpg');
 	}
+
+	#manifesto p {
+		padding: 0 1em;
+	}
+
+	#publications .paper {
+		margin: 2em;
+	}
+
+	#people .person {
+		margin: 2em;
+
+		text-align: center;
+	}
+
+	#people .person img {
+		margin: .5em;
+		border-radius: 150px;
+	}
+
+	#people .person p {
+		max-width: 400px;
+		margin: auto;
+		text-align: left;
+	}
 }
 
 @media (min-width: 801px) {
 	#manifesto {
 		background-image: url('img/seattle.jpg');
-	}	
+	}
+
+	#people .person {
+		margin-top: 2em;
+		overflow: hidden;
+	}
+
+	#people .person img {
+		width: 100px;
+		height: 100px;
+		border-radius: 50px;
+		margin-top: 1em;
+		float: left;
+	}
+
+	#people .person p {
+		margin-top: 1em;
+		margin-left: 120px;
+	}
 }
 
 @media (min-width: 1400px) {
